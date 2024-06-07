@@ -1,0 +1,20 @@
+{
+    "name": "tourist-doc-verification",
+    "version": "1.0.0",
+    "description": "A web application for verifying tourist documents using blockchain.",
+    "main": "index.js",
+    "scripts": {
+        "start:backend": "cd backend && npm start",
+        "start:frontend": "cd frontend && npm start",
+        "test:backend": "cd backend && npm test",
+        "test:frontend": "cd frontend && npm test",
+        "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+        "test": "concurrently \"npm run test:backend\" \"npm run test:frontend\""
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "^5.3.3",
+        "concurrently": "^6.2.0"
+    }
+}
