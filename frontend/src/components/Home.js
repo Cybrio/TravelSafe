@@ -1,16 +1,25 @@
 import React from 'react';
 
-const Home = () => {
+function Home() {
   return (
-    <div className="container mt-5">
-      <h1 className="text-center">Document Verification System</h1>
-      <p className="lead text-center">Verify your documents quickly and securely using our system.</p>
-      <div className="text-center">
-        <a href="/register" className="btn btn-primary mr-2">Register</a>
-        <a href="/login" className="btn btn-secondary">Login</a>
+    <div>
+      <h2>Travel Itinerary</h2>
+      <div>
+        <h3>New York, NY</h3>
+        <img src="path/to/image1.jpg" alt="New York" />
       </div>
+      <div>
+        <h3>Los Angeles, CA</h3>
+        <img src="path/to/image2.jpg" alt="Los Angeles" />
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/messages">Messages</a>
+        <a href="/search">Search</a>
+        <a href="/profile">Profile</a>
+      </nav>
     </div>
   );
-};
+}
 
 export default Home;
